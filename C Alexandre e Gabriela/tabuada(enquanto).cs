@@ -40,8 +40,9 @@ namespace C_Alexandre_e_Gabriela
 
             i = 0;
             num = Convert.ToDouble(txtnum.Text);
+            txttab.Clear();
 
-            while(i <= 10)
+            while (i <= 10)
             {
                 r = num * i;
                 txttab.Text = String.Concat(txttab.Text + "\r\n" + num.ToString() + " X " + i.ToString() + " = " + r.ToString());
@@ -61,6 +62,7 @@ namespace C_Alexandre_e_Gabriela
             double i, r, num;
 
             i = 0;
+            txttab.Clear();
             do
             {
                 num = Convert.ToDouble(txtnum.Text);
@@ -81,13 +83,12 @@ namespace C_Alexandre_e_Gabriela
         {
             double i, r, num;
 
-            txtnum.Clear();
             txttab.Clear();
+            num = Convert.ToDouble(txtnum.Text);
 
 
             for (i = 1; i<11; i++)
-            {
-                num = Convert.ToDouble(txtnum.Text);
+            { 
                 r = num * i;
                 txttab.Text = String.Concat(txttab.Text + "\r\n" + num.ToString() + " X " + i.ToString() + " = " + r.ToString());
             }
